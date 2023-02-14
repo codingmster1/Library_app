@@ -1,1 +1,11 @@
 /**/
+
+#side-form
+{
+    display:flex;
+    flex-direction: column;
+    height: 570px;
+    width: 280px;
+    padding: 30px;
+    background-color: rgb(153, 224, 94);
+}
