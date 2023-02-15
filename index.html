@@ -3,31 +3,67 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
-        
         <title>Library</title>
         <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="content">
+<body>
 
-    <h1>Reading List</h1>
+    
     <div id="side-form">
     <header class="header">
         <div class="head-container">
             <h1 class="header-title">Library Book Vault</h1>
             <img class="icon" src="book_lock.png">
-            <input type="button" value="+ ADD BOOK"id="add-book">
-        </div>
 
+            
+            <main class="main-container">
+            <button class="add-book" id="add-book">+ ADD BOOK</button>
+            <div class="books-grid" id="booksGrid"></div>
+            </main>
         
+                
+        </div>
 
     </div>
     </header>
 
-    <main>
-
-    </main>
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+          <h3>Add new book</h3>
+          <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="100"
+          />
+          <p class="error-msg" id="errorMsg"></p>
+          <input
+            class="input"
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+            maxlength="100"
+          />
+          <input
+            class="input"
+            type="number"
+            id="pages"
+            placeholder="Pages"
+            required
+            max="10000"
+          />
+          <div class="is-read">
+            <label for="is-read">Have you read it?</label>
+            <input class="checkbox" type="checkbox" id="isRead" />
+          </div>
+          <button class="btn btn-light-green" type="submit">Submit</button>
+        </form>
+      </div>
 
 
 
