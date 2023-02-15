@@ -1,18 +1,32 @@
 /**/
 
+h1
+{
+    
+    font-size: 30px;
+    padding: 15px;
+    margin:0;
+    background-color: rgb(188, 243, 142);
+    text-align:center;
+    height: 40px;
+}
+
 #side-form
 {
     display:flex;
     flex-direction: column;
-    height: 580px;
+    height: 590px;
     width: 290px;
-    padding: 20px;
-    background-color: rgb(184, 247, 132);
+    padding: 15px;
+    background-color: rgb(188, 243, 142);
+    margin:0;
+    
 }
 
 
 #add-book
 {
+    
     border: 1px solid rgb(128, 28, 28);
     background-color: rgb(252, 90, 90);
     border-radius: 5px;
@@ -32,4 +46,5 @@
     cursor: pointer;
     border-color:rgb(128, 28, 28);
     background-color:rgb(145, 28, 28);
+    transition: 0.3s;
 }
