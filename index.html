@@ -10,65 +10,45 @@
 
 <body>
 
-    
-    <div id="side-form">
-    <header class="header">
-        <div class="head-container">
-            <h1 class="header-title">Library Book Vault</h1>
-            <img class="icon" src="book_lock.png">
+  <header>
+  <img src="black_book.png">
+  <h1 id="page-title">Book Vault</h1>
+  <h2>Banned Books</h2>
+  <h3>and My Personal Favorites</h3>
+  </header>
 
-            
-            <main class="main-container">
-            <button class="add-book" id="add-book">+ ADD BOOK</button>
-            <div class="books-grid" id="booksGrid"></div>
-            </main>
-        
-                
-        </div>
+  <div class="wrapper">
+    <div id="form-container" class="search-bar">
+      <form autocomplete="off" action="">
+        <input id="search-bar" type="text" placeholder="search">
+      </form>
+
+      <form id="sort-form" action="">
+        <label for="filter">Filter By:</label>
+        <select name="filter" id="filter-select">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+      </form>
+
+      <form id="read-filter">
+        <div>View:</div>
+
+        <input type="radio" id="all" name="view" value="all" checked="checked">
+        <label for="all">all</label>
+        <input type="radio" id="read" name="view" value="read">
+        <label for="read">read</label>
+        <input type="radio" id="not-read" name="view" value="not-read">
+        <label for="not-read">not read</label>
+      </form>
+
 
     </div>
-    </header>
-
-    <div class="modal" id="addBookModal">
-        <form class="add-book-form" id="addBookForm">
-          <h3>Add new book</h3>
-          <input
-            class="input"
-            type="text"
-            id="title"
-            placeholder="Title"
-            required
-            maxlength="100"
-          />
-          <p class="error-msg" id="errorMsg"></p>
-          <input
-            class="input"
-            type="text"
-            id="author"
-            placeholder="Author"
-            required
-            maxlength="100"
-          />
-          <input
-            class="input"
-            type="number"
-            id="pages"
-            placeholder="Pages"
-            required
-            max="10000"
-          />
-          <div class="is-read">
-            <label for="is-read">Have you read it?</label>
-            <input class="checkbox" type="checkbox" id="isRead" />
-          </div>
-          <button class="btn btn-light-green" type="submit">Submit</button>
-        </form>
-      </div>
-
-
-
-
-
+  </div>
+  
+ 
 
 </body>
     </html>
