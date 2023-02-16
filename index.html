@@ -13,8 +13,8 @@
   <header>
   <img src="black_book.png">
   <h1 id="page-title">Book Vault</h1>
-  <h2>Banned Books</h2>
-  <h3>and My Personal Favorites</h3>
+  <h2>Banned Books/My Favorites</h2>
+  
   </header>
 
   <div class="wrapper">
@@ -52,7 +52,26 @@
 </div>
 </div>
 
+<div class="modal" id="add-book-modal">
+  <div class="modal-header"><h1>Add</h1><button class="close" onclick="toggleBookModal()">&times;</button></div>
+<br>
 
+<div class="modal-content">
+  <form id="new-book" autocomplete="off">
+    <label for="title" class="title inf">Title</label>
+    <br><br>
+    <label for="text" class="inf" name="title" id="title">
+      <br><br>
+      <label for="author" class="author inf">Author</label>
+      <br><br>
+      <input type="text" name="author" class="inf">
+      <br><br>
+      <div id="form-checkbox"><input type="checkbox" name="check1" id="check1" class="inf"><label>Finished</label></div>
+
+    </label>
+  </form>
+</div>
+</div>
   
  
 
