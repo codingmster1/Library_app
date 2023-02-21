@@ -26,3 +26,9 @@ h1
     display: flex;
     margin-left: 360px;
 }
+
+th
+{
+    font-size: 30px;
+    color: rgb(5, 43, 46);
+}
