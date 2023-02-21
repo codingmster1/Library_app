@@ -5,86 +5,16 @@
         <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Library</title>
         <script src="script.js" defer></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
 </head>
 
 <body>
 
-  <header>
-  <img src="black_book.png">
-  <h1 id="page-title">Book Vault</h1>
-  <h2>Banned Books/My Favorites</h2>
+ 
   
-  </header>
-
-  <div class="wrapper">
-    <div id="form-container" class="search-bar">
-      <form autocomplete="off" action="">
-        <input id="search-bar" type="text" placeholder="search">
-      </form>
-
-      <form id="sort-form" action="">
-        <label for="filter">Filter By:</label>
-        <select name="filter" id="filter-select">
-          <option value="newest">Newest</option>
-          <option value="oldest">Oldest</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-        </select>
-      </form>
-
-      <form id="read-filter">
-        <div>View:</div>
-
-        <input type="radio" id="all" name="view" value="all" checked="checked">
-        <label for="all">all</label>
-        <input type="radio" id="read" name="view" value="read">
-        <label for="read">read</label>
-        <input type="radio" id="not-read" name="view" value="not-read">
-        <label for="not-read">not read</label>
-      </form>
-</div>
-
-<div id="user-results" class="user-results">
-  <div class="user-card add-card" id="add-card" onclick="toggleBookModal(addBookModal)">
-  <div class="plus">+</div>
-  </div>
-</div>
-</div>
-
-<div class="modal" id="add-book-modal">
-  <div class="modal-header"><h1>Add</h1><button class="close" onclick="toggleBookModal()">&times;</button></div>
-<br>
-
-<div class="modal-content">
-  <form id="new-book" autocomplete="off">
-    <label for="title" class="title inf">Title</label>
-    <br><br>
-    <input type="text" class="inf" name="title" id="title">
-      <br><br>
-      <label for="author" class="author inf">Author</label>
-      <br><br>
-      <input type="text" name="author" class="inf">
-      <br><br>
-      <div id="form-checkbox"><input type="checkbox" name="check1" id="check1" class="inf"><label>Finished Reading</label></div>
-      <br><br>
-      <div class="add-button"><button type="submit" id="add-book-button" value="on/off">Add Book</button></div>
-
-  </form>
-</div>
-</div>
   
-<div class="modal" id="book-search-modal">
-  <div class="modal-header"><h1>Is this the one?</h1><button class="close-button" onclick="toggleBookModal()">&times;</button></div>
-  <br>
-  <div id="booksearch-img"><img src=""></div>
-  <div id="book-search-title" class="info">The Black Farm</div>
-  <div id="booksearch-author" class="info">Elias Witherow</div>
-  <form action="">
-    <button id="confirm">Yes</button> <button id="show-results">No</button>
-  </form>
 
-</div>
+
  
 
 </body>
