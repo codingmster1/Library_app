@@ -2,6 +2,10 @@
 
 
 
+*
+{
+    font-family: 'Gajraj One', cursive;
+}
 
 
 
@@ -9,25 +13,16 @@
 
 
 
-
-/*img
+img
 {
     width: 145px;
     height: 145px;
+    margin-left: 460px;
+    margin-bottom: 40px;
 }
 
-.top
+h1
 {
-    
-    display: center;
-    
-
+    display: flex;
+    margin-left: 360px;
 }
-
-#page-title
-{
-    align-items: center;
-    margin-left:595px;
-    margin-bottom: 900px;
-}
-*/
