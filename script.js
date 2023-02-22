@@ -1,4 +1,4 @@
-console.log("hello");
+//console.log("hello");
 
 //Book Class
 
@@ -22,11 +22,31 @@ class UI {
         pages: '257'
         },
         {
-        title: 'Berserk',
+        title: 'Berserk Deluxe Edition',
         author: 'Kentaro Muira',
         pages: '250'
     }
 ];
+
+const books = StoredBooks;
+
+books.forEach((book) => UI.addBookToList(books));
+
+}
+
+addBookToList(book) {
+    const list = document.querySelector('#book-list');
+
+    const row = document.createElement('tr');
+
+    row.innerHTML = `
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.pages}</td>
+    <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+    `;
+
+    list.appendChild(row);
 
 }
 
