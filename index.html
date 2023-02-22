@@ -19,30 +19,33 @@
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" id="title"
-      class="form-control">
+      class="form-control form-control-lg">
     </div>
     <div class="form-group">
       <label for="author">Author</label>
       <input type="text" id="author"
-      class="form-control">
+      class="form-control form-control-lg">
     </div>
     <div class="form-group">
       <label for="pages">Pages</label>
       <input type="text" id="pages"
-      class="form-control">
+      class="form-control form-control-lg">
     </div>
-    <input type="submit" value="Add Book" 
-    class="btn btn-primary btn-block">
+    <div class="d-grid gap-2">
+    <button class="btn btn-lg btn-outline-light mt-3"
+    type="button">Add Book</button>
+  </div>
   </form>
-  <table class="table table-striped">
+  <table class="table mt-5">
     <thead>
-      <tr>
+      <tr class="text-info">
         <th>Title</th>
         <th>Author</th>
         <th>Pages</th>
         <th></th>
       </tr>
     </thead>
+    <tbody id="book-list"></tbody>
   </table>
 </div>
 </body>
