@@ -14,7 +14,7 @@ class Book
 //UI Class
 
 class UI {
-    static displayBook() {
+    static displayBooks() {
         const StoredBooks = [
         {
         title: 'The Black Farm',
@@ -25,16 +25,38 @@ class UI {
         title: 'Berserk Deluxe Edition',
         author: 'Kentaro Muira',
         pages: '250'
+       },
+       {
+       title: 'Return To The Black Farm',
+       author: 'Elias Witherow',
+       pages: '280'
+       },
+       {
+        title: 'To Be Devoured',
+        author: 'Sara Tantlinger',
+        pages: '130'
+       },
+       {
+        title: 'Fear and Trembling',
+        author: 'Kierkegaard',
+        pages: '200'
+       },
+       {
+       title: 'The Language of Argument',
+       author: 'Larry W. Burton',
+       pages: '120'
     }
+    
 ];
 
+    
 const books = StoredBooks;
 
-books.forEach((book) => UI.addBookToList(books));
+books.forEach((book) => UI.addBookToList(book));
 
 }
 
-addBookToList(book) {
+static addBookToList(book) {
     const list = document.querySelector('#book-list');
 
     const row = document.createElement('tr');
@@ -55,6 +77,8 @@ addBookToList(book) {
 //Store class: Local Storage
 
 //Event Class: Display Book
+
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 //Event Class: Add a Book
 
