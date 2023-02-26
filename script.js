@@ -36,6 +36,16 @@ class Book {
           title: 'Fear and Trembling',
           author: 'Kierkegaard',
           pages: '200'
+        },
+        {
+          title: 'Berserk Volume 1',
+          author: 'Miura',
+          pages: '150'
+        },
+        {
+          title: 'Sensor',
+          author: 'Junji Ito',
+          pages: '120'
         }
 
 
