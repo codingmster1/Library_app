@@ -21,7 +21,23 @@ class Book {
           title: 'Return To The Black Farm',
           author: 'Elias Witherow',
           pages: '250'
+        },
+        {
+          title: 'The Language Of Argument',
+          author: 'Burton & McDonald',
+          pages: '150'
+        },
+        {
+          title: 'To Be Devoured',
+          author: 'Sara Tantlinger',
+          pages: '120'
+        },
+        {
+          title: 'Fear and Trembling',
+          author: 'Kierkegaard',
+          pages: '200'
         }
+
 
       ];
 
