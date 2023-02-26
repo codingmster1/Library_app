@@ -9,7 +9,24 @@ class Book {
   // UI Class: Handle UI Tasks
   class UI {
     static displayBooks() {
-      const books = Store.getBooks();
+
+      const StoredBooks = [
+        {
+          title: 'The Black Farm',
+          author: 'Elias Witherow',
+          pages: '250'
+
+        },
+        {
+          title: 'Return To The Black Farm',
+          author: 'Elias Witherow',
+          pages: '250'
+        }
+
+      ];
+
+      const books = StoredBooks;
+      //const books = Store.getBooks();
   
       books.forEach((book) => UI.addBookToList(book));
     }
